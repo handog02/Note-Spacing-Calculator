@@ -1,0 +1,67 @@
+body{
+    background-color: bisque;
+    font-family: garamond;
+}
+body, ul, li, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+main, footer{
+    max-width: 100%;
+    width: 1200px;
+    padding: 0 40px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.input label{
+    display: block;
+    font-size: 20px;
+}
+.input textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    resize: none;
+    margin: 5px 0;
+}
+.input button{
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    font-family: garamond;
+    font-size: 20px;
+    border-radius: 12px;
+}
+section.result{
+    margin: 50px 0;
+    font-size: 20px;
+}
+.result li{
+    color: green;
+    list-style-type: none;
+}
+article.instructions{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.instructions ul li{
+    list-style-type: none;
+} 
+footer{
+    text-align: center;
+}
+
+@media screen and (min-width: 800px){
+
+    header{
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Note Spacing Calculator</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Note Spacing Calculator <br>for Music Engravers</h1>
+    </header>
+    <main>
+        <section class="input">
+            <form>
+                <label for="notes">Input notes here:</label>
+                <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Example: 100/a5/h/q/q/a1/sx4/q./ex3"></textarea>
+            </form>
+            <button onclick="calculate()">Calculate</button>
+        </section>
+        <section class="result">
+            <p>The spacing for individual notes are:</p>
+            <ul class="result" id="result"></ul>
+        </section>
+        <article class="instructions">
+            <h2>Instructions</h2>
+            <p>The first number you should enter is the amount of space you have to work with. This can be in any unit. Afterwards, notes can be entered from left to right. Use the reference below on how to type different note lengths. Everything should be separated by a forward slash (/). To add a space, for example, to allow for a bar line or a cautionary clef, type 'a' (for 'add') followed by the amount of space required in the same units as the number at the beginning, e.g. a5 to add five units of space. For large groups of the same type of note, it is possible to group them together by adding a 'x' followed by the number of notes onto the end, e.g. q.x4 will give four dotted quarter notes.</p>
+            <h3>Note reference</h3>        
+            <ul>
+                <li>w: whole note</li>
+                <li>h: half note</li>
+                <li>q: quarter note</li>
+                <li>e: 8th note</li>
+                <li>s: 16th note</li>
+                <li>t: 32nd note</li>
+            </ul>        
+            <p>For a dotted note, add a '.' to the end. Currently, these are the only notes supported.</p>
+        </article>
+    </main>
+    <footer>
+        <p class="copyright">Copyright 2021 Han Zhao <a href="mailto:hanzhao47@gmail.com">hanzhao47@gmail.com</a>. Note spacing ratios were conceived by <a href="https://www.terentyevpublishing.com/">Savva Terentyev</a>.</p>
+    </footer>
+    
+    <script src="calculate.js"></script>
+
+</body>
+</html>
