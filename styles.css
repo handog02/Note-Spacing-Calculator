@@ -48,6 +48,9 @@ section.result{
     color: green;
     list-style-type: none;
 }
+.error{
+    color: red;
+}
 article.instructions{
     margin-bottom: 50px;
     font-size: 20px;
