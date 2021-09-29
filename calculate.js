@@ -101,7 +101,7 @@ function calculate(){
         } else if(!note.includes('.')){
             notesNew.push(note.charAt(0));
         }
-    })
+    });
 
     notesNew = [...new Set(notesNew)];
     const result = document.querySelector('#result');
@@ -147,10 +147,10 @@ function calculate(){
             case 't':
                 result.innerHTML += `<li>16th: ${unit*60/7} units</li`;
         }
-    })
+    });
 
     if($('#result').is(':empty')){
-        error.innerHTML += 'Error: please check your input!'
+        error.innerHTML += 'Error: please check your input!';
     }
 
-}
+};
